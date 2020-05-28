@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+      body {
+    overflow-x: hidden !important;
+}
+      body.background {
+          height: 100%;
+      }
+      .fixed-background {
+          background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75)), url(img/green-wallpaper.jpg) no-repeat 50% fixed;
+          background-size: cover;
+          width: 100%;
+          height: 100%;
+          position: fixed;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+      }
+      body.background main {
+    margin: 0!important;
+    height: 100%;
+}
+main.default-transition {
+    transition: margin-left .3s;
+}
+.auth-card {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 1px 15px rgba(0,0,0,.04), 0 1px 6px rgba(0,0,0,.04);
+}
+.card {
+    border: initial;
+    background: #fff;
+    border-radius: calc(.15rem - 1px);
+    box-shadow: 0 1px 15px rgba(0,0,0,.04), 0 1px 6px rgba(0,0,0,.04);
+}
+.auth-card .image-side {
+    width: 40%;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(img/green-wallpaper.jpg) no-repeat top;
+    background-size: cover;
+    padding: 80px 40px;
+}
+.auth-card .form-side {
+    width: 60%;
+    padding: 80px;
+}
+body.background main .container {
+    height: 100%;
+}
+.ml-auto, .mx-auto {
+    margin-left: auto !important;
+}
+
+.mb-auto, .my-auto {
+    margin-bottom: auto !important;
+}
+.mr-auto, .mx-auto {
+    margin-right: auto !important;
+}
+.mt-auto, .my-auto {
+    margin-top: auto !important;
+}
+    </style>
+
+    <title>SCEMP</title>
+  </head>
+  <body class="background">
+    <div class="fixed-background" style="opacity: 1;"></div>
+    <main class="default-transition" style="opacity: 1;">
+        <div class="container">
+            <div class="row h-100">
+                <div class="col-12 col-md-10 mx-auto my-auto" style="margin-top: 150px !important;">
+                    <div class="card auth-card">
+                        <div class="position-relative image-side ">
+                            <div class="mb-4">
+                              <div class="logo d-flex">
+                                <h1 class="mb-0 text-primary"><i class="fas fa-power-off"></i></h1>
+                                <h1 class="mb-0 text-primary ml-2">SCEMP</h1>
+                              </div>
+                              <p class="mb-0 text-white" style="line-height: 0.5;"><small>Synergy Coologic Energy Managing Platform</small></p>
+                            </div>
+
+                            <p class="text-white mb-0 text-justify">
+                                Introducing a system that will send an alert in the event of a problem with appropriate sensor. Increasingly, this system will manage multiple system in the building, connected through a building automation hub.
+                                <br>
+                                <br>
+                                <br>
+                                <!-- <a href="#" class="white">register</a> -->
+                            </p>
+                        </div>
+                        <div class="form-side">
+                            <div class="mb-4">
+                              <div class="logo d-flex">
+                                <h3 class="mb-0 text-primary"><i class="fas fa-power-off"></i></h3>
+                                <h3 class="mb-0 text-primary ml-2">SCEMP</h3>
+                              </div>
+                              <p class="mb-0 text-muted" style="line-height: 0.5;"><small>Synergy Coologic Energy Managing Platform</small></p>
+                            </div>
+                            <!-- <h6 class="mb-4">Login</h6> -->
+                            <form>
+                              <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                              </div>
+                              <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                              </div>
+                              <a href="dashboard.html" type="submit" class="btn btn-primary">Login</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+  </body>
+</html>

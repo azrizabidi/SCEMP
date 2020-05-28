@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="lib/chartist/css/chartist.css" rel="stylesheet">
+
+    <title>SCEMP</title>
+  </head>
+  <body>
+    <nav class="header fixed-top">
+      <a id="menu" href="#" class="menu" onclick="togNav()">
+        <i id="menuicon" class="fas fa-bars"></i>
+      </a>
+      <div id="header">
+        <div class="header-left">
+          <div class="logo d-flex">
+            <h3 class="mb-0 text-primary"><i class="fas fa-power-off"></i></h3>
+            <h3 class="mb-0 text-primary ml-2">SCEMP</h3>
+          </div>
+          <p class="mb-0 text-muted" style="line-height: 0.5;"><small>Synergy Coologic Energy Managing Platform</small></p>
+        </div>
+        <div class="header-right">
+          <div class="dropdown notification">
+            <a class="btn-notification dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="material-icons">notifications</i>
+            </a>
+
+            <div class="dropdown-menu dropdown-menu-sm-right" aria-labelledby="dropdownMenuLink">
+              <div class="dropdown-menu-header">
+                <h6 class="dropdown-menu-title">Notification</h6>
+                <div class="dropdown-option">
+                  <a href="">Filter List</a>
+                  <a href="">Settings</a>
+                </div>
+              </div>
+              <!-- <div class="list-group"> -->
+                <a href="#" class="list-group-item list-group-item-action bg-gray dropdown-item border-left-0 border-right-0 bprder-top-0">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Assistant Manager</h5>
+                    <small>3 days ago</small>
+                  </div>
+                  <p class="mb-1"><span class="text-warning">Warning</span> on <strong>Level B2</strong>.</p>
+                  <small>Light Failure, donec id elit non mi porta.</small>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-gray dropdown-item border-left-0 border-right-0">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Project Engineer </h5>
+                    <small class="text-muted">3 days ago</small>
+                  </div>
+                  <p class="mb-1"><span class="text-primary">Appreciated</span> your work yesterday.</p>
+                  <small class="text-muted">Good Job! Donec id elit non mi porta.</small>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-gray dropdown-item border-left-0 border-right-0 border-bottom-0">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Project Executive</h5>
+                    <small class="text-muted">3 days ago</small>
+                  </div>
+                  <p class="mb-1"><strong>20+ new items</strong> added at store room.</p>
+                  <small class="text-muted">Donec id elit non mi porta.</small>
+                </a>
+              <!-- </div>
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a> -->
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle user-profile dropdown-menu-sm-right" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="http://via.placeholder.com/500x500" alt="">
+            </a>
+            <div class="dropdown-menu dropdown-user" aria-labelledby="dropdownMenu2">
+              <a href="#" class="dropdown-item" type="button">My Profile</a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item" >Dark Mode</a>
+              <a href="#" class="dropdown-item" type="button">Settings</a>
+              <a href="login.html" class="dropdown-item" type="button">Logout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div id="mySidenav" class="side-nav open" style="width: 80px;">
+      <ul class="main-menu">
+        <li>
+          <a href="dashboard.html">
+            <i class="fas fa-home"></i>
+            <p class="m-0">Dashboard</p>
+          </a>
+        </li>
+        <li>
+          <a href="controller-configuration.html">
+            <i class="fas fa-tools"></i>
+            <p class="m-0">Tools</p>
+          </a>
+        </li>
+        <li>
+          <a href="charts.html">
+            <i class="fas fa-chart-line"></i>
+            <p class="m-0">Charts</p>
+          </a>
+        </li>
+        <li>
+          <a href="button.html">
+            <i class="fas fa-list-ul"></i>
+            <p class="m-0">Buttons</p>
+          </a>
+        </li>
+        <li class="nav-item active">
+          <a href="form.html">
+            <i class="fas fa-images"></i>
+            <p class="m-0">Forms</p>
+          </a>
+        </li>
+        <li>
+          <a href="color.html">
+            <i class="fas fa-sync"></i>
+            <p class="m-0">Colors</p>
+          </a>
+        </li>
+        <li>
+          <a href="accordion.html">
+            <i class="fas fa-cog"></i>
+            <p class="m-0">Accordion</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="navbar d-sm-none">
+      <a href="dashboard.html">
+        <i class="fas fa-home"></i>
+        <p class="m-0">Dashboard</p>
+      </a>
+      <a href="controller-configuration.html">
+        <i class="fas fa-tools"></i>
+        <p class="m-0">Tools</p>
+      </a>
+      <a href="charts.html">
+        <i class="fas fa-chart-line"></i>
+        <p class="m-0">Charts</p>
+      </a>
+      <a href="#contact" class="active">
+        <i class="fas fa-list-ul"></i>
+        <p class="m-0">More</p>
+      </a>
+    </div>
+
+    <div id="main">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 page-title">
+            <h2><span class="text-primary">Forms</span></h2>
+            <nav class="breadcrumb-container" aria-label="breadcrumb">
+              <ol class="breadcrumb pt-0">
+                <li class="breadcrumb-item">
+                    <a href="#">Home</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Forms</li>
+              </ol>
+            </nav>
+            <hr>
+          </div>
+        </div>
+        <div class="card shadow-sm mb-5">
+          <div class="card-header d-flex justify-content-between">
+            <h6 class="mb-0">Overview</h6>
+            <div class="card-option">
+              <a href="#" class="mr-2"><i class="fas fa-chevron-down"></i></a>
+              <a href="#"><i class="fas fa-cog"></i></a>
+            </div>
+          </div>
+          <div class="card-body bg-gray">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+        <div class="card shadow-sm mb-5">
+          <div class="card-header d-flex justify-content-between">
+            <h6 class="mb-0">Form Controls</h6>
+            <div class="card-option">
+              <a href="#" class="mr-2"><i class="fas fa-chevron-down"></i></a>
+              <a href="#"><i class="fas fa-cog"></i></a>
+            </div>
+          </div>
+          <div class="card-body bg-gray">
+            <form>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Example select</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlSelect2">Example multiple select</label>
+                <select multiple class="form-control" id="exampleFormControlSelect2">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="card shadow-sm mb-5">
+          <div class="card-header d-flex justify-content-between">
+            <h6 class="mb-0">Sizing</h6>
+            <div class="card-option">
+              <a href="#" class="mr-2"><i class="fas fa-chevron-down"></i></a>
+              <a href="#"><i class="fas fa-cog"></i></a>
+            </div>
+          </div>
+          <div class="card-body bg-gray">
+            <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
+            <input class="form-control" type="text" placeholder="Default input">
+            <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm">
+            <hr>
+            <select class="form-control form-control-lg">
+              <option>Large select</option>
+            </select>
+            <select class="form-control">
+              <option>Default select</option>
+            </select>
+            <select class="form-control form-control-sm">
+              <option>Small select</option>
+            </select>
+          </div>
+        </div>
+        <div class="card shadow-sm mb-5">
+          <div class="card-header d-flex justify-content-between">
+            <h6 class="mb-0">Range Inputs</h6>
+            <div class="card-option">
+              <a href="#" class="mr-2"><i class="fas fa-chevron-down"></i></a>
+              <a href="#"><i class="fas fa-cog"></i></a>
+            </div>
+          </div>
+          <div class="card-body bg-gray">
+              <div class="form-group">
+                <label for="formControlRange">Example Range input</label>
+                <input type="range" class="form-control-range" id="formControlRange">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="card shadow-sm mb-5">
+          <div class="card-header d-flex justify-content-between">
+            <h6 class="mb-0">Horizontal Form</h6>
+            <div class="card-option">
+              <a href="#" class="mr-2"><i class="fas fa-chevron-down"></i></a>
+              <a href="#"><i class="fas fa-cog"></i></a>
+            </div>
+          </div>
+          <div class="card-body bg-gray">
+            <form>
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3">
+    </div>
+  </div>
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+          <label class="form-check-label" for="gridRadios1">
+            First radio
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+          <label class="form-check-label" for="gridRadios2">
+            Second radio
+          </label>
+        </div>
+        <div class="form-check disabled">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+          <label class="form-check-label" for="gridRadios3">
+            Third disabled radio
+          </label>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+  <div class="form-group row">
+    <div class="col-sm-2">Checkbox</div>
+    <div class="col-sm-10">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck1">
+        <label class="form-check-label" for="gridCheck1">
+          Example checkbox
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="col-sm-10">
+      <button type="submit" class="btn btn-primary">Sign in</button>
+    </div>
+  </div>
+</form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/main.js"></script>
+    <!-- <script src="fontawesome/js/all.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="lib/jquery/js/jquery.js"></script>
+    <script src="lib/popper.js/js/popper.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <script src="lib/jquery.cookie/js/jquery.cookie.js"></script>
+    <script src="lib/chartist/js/chartist.js"></script>
+    <script src="js/ResizeSensor.js"></script>
+    <script src="js/chart.chartist.js"></script>
+
+  </body>
+</html>

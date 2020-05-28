@@ -1,0 +1,719 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>SCEMP</title>
+  </head>
+  <body>
+    <nav class="header fixed-top">
+      <a id="menu" href="#" class="menu" onclick="togNav()">
+        <i id="menuicon" class="fas fa-bars"></i>
+      </a>
+      <div id="header">
+        <div class="header-left">
+          <div class="logo d-flex">
+            <h3 class="mb-0 text-primary"><i class="fas fa-power-off"></i></h3>
+            <h3 class="mb-0 text-primary ml-2">SCEMP</h3>
+          </div>
+          <p class="mb-0 text-muted" style="line-height: 0.5;"><small>Synergy Coologic Energy Managing Platform</small></p>
+        </div>
+        <div class="header-right">
+          <div class="dropdown notification">
+            <a class="btn-notification dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="material-icons">notifications</i>
+            </a>
+
+            <div class="dropdown-menu dropdown-menu-sm-right" aria-labelledby="dropdownMenuLink">
+              <div class="dropdown-menu-header">
+                <h6 class="dropdown-menu-title">Notification</h6>
+                <div class="dropdown-option">
+                  <a href="">Filter List</a>
+                  <a href="">Settings</a>
+                </div>
+              </div>
+              <!-- <div class="list-group"> -->
+                <a href="#" class="list-group-item list-group-item-action bg-gray dropdown-item border-left-0 border-right-0 bprder-top-0">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Assistant Manager</h5>
+                    <small>3 days ago</small>
+                  </div>
+                  <p class="mb-1"><span class="text-warning">Warning</span> on <strong>Level B2</strong>.</p>
+                  <small>Light Failure, donec id elit non mi porta.</small>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-gray dropdown-item border-left-0 border-right-0">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Project Engineer </h5>
+                    <small class="text-muted">3 days ago</small>
+                  </div>
+                  <p class="mb-1"><span class="text-primary">Appreciated</span> your work yesterday.</p>
+                  <small class="text-muted">Good Job! Donec id elit non mi porta.</small>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-gray dropdown-item border-left-0 border-right-0 border-bottom-0">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Project Executive</h5>
+                    <small class="text-muted">3 days ago</small>
+                  </div>
+                  <p class="mb-1"><strong>20+ new items</strong> added at store room.</p>
+                  <small class="text-muted">Donec id elit non mi porta.</small>
+                </a>
+              <!-- </div>
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a> -->
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle user-profile dropdown-menu-sm-right" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="http://via.placeholder.com/500x500" alt="">
+            </a>
+            <div class="dropdown-menu dropdown-user" aria-labelledby="dropdownMenu2">
+              <a href="#" class="dropdown-item" type="button">My Profile</a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item" >Dark Mode</a>
+              <a href="#" class="dropdown-item" type="button">Settings</a>
+              <a href="login.html" class="dropdown-item" type="button">Logout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div id="mySidenav" class="side-nav open" style="width: 80px;">
+      <ul class="main-menu">
+        <li>
+          <a href="dashboard.html">
+            <i class="fas fa-home"></i>
+            <p class="m-0">Dashboard</p>
+          </a>
+        </li>
+        <li class="nav-item active">
+          <a href="controller-configuration.html">
+            <i class="fas fa-tools"></i>
+            <p class="m-0">Tools</p>
+          </a>
+        </li>
+        <li>
+          <a href="charts.html">
+            <i class="fas fa-chart-line"></i>
+            <p class="m-0">Charts</p>
+          </a>
+        </li>
+        <li>
+          <a href="button.html">
+            <i class="fas fa-list-ul"></i>
+            <p class="m-0">Buttons</p>
+          </a>
+        </li>
+        <li>
+          <a href="form.html">
+            <i class="fas fa-images"></i>
+            <p class="m-0">Forms</p>
+          </a>
+        </li>
+        <li>
+          <a href="color.html">
+            <i class="fas fa-sync"></i>
+            <p class="m-0">Colors</p>
+          </a>
+        </li>
+        <li>
+          <a href="accordion.html">
+            <i class="fas fa-cog"></i>
+            <p class="m-0">Accordion</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="navbar d-sm-none">
+      <a href="dashboard.html">
+        <i class="fas fa-home"></i>
+        <p class="m-0">Dashboard</p>
+      </a>
+      <a href="controller-configuration.html" class="active">
+        <i class="fas fa-tools"></i>
+        <p class="m-0">Tools</p>
+      </a>
+      <a href="charts.html">
+        <i class="fas fa-chart-line"></i>
+        <p class="m-0">Charts</p>
+      </a>
+      <a href="#contact">
+        <i class="fas fa-list-ul"></i>
+        <p class="m-0">More</p>
+      </a>
+    </div>
+
+    <div id="main">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 page-title">
+            <h2><span class="text-primary">Controller</span> Switch Configuration</h2>
+            <nav class="breadcrumb-container" aria-label="breadcrumb">
+              <ol class="breadcrumb pt-0">
+                <li class="breadcrumb-item">
+                    <a href="#">Home</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Controller Switch Configuration</li>
+              </ol>
+            </nav>
+            <hr>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="card shadow-sm">
+              <div class="card-header d-flex justify-content-between">
+                <h6 class="mb-0">Select Zone To Configure</h6>
+                <div class="card-option">
+                  <a href="#" class="mr-2"><i class="fas fa-chevron-down"></i></a>
+                  <a href="#"><i class="fas fa-cog"></i></a>
+                </div>
+              </div>
+              <div id="selectzone" class="card-body bg-gray">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input selectzone" id="customCheck1">
+                  <label class="custom-control-label" for="customCheck1">Zone Carpark B1</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input selectzone" id="customCheck2">
+                  <label class="custom-control-label" for="customCheck2">Zone Carpark B2</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input selectzone" id="customCheck3">
+                  <label class="custom-control-label" for="customCheck3">Zone Carpark B3</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input selectzone" id="customCheck4">
+                  <label class="custom-control-label" for="customCheck4">Zone Level UG (Common Area)</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input selectzone" id="customCheck5">
+                  <label class="custom-control-label" for="customCheck5">Zone Level UG (Toilet #01)</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input selectzone" id="customCheck6">
+                  <label class="custom-control-label" for="customCheck6">Zone Level LG</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input selectzone" id="customCheck7">
+                  <label class="custom-control-label" for="customCheck7">Zone Level CC</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input selectzone" id="customCheck8">
+                  <label class="custom-control-label" for="customCheck8">Zone Level 1</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input selectzone" id="customCheck9">
+                  <label class="custom-control-label" for="customCheck9">Zone Level 2</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input selectzone" id="customCheck10">
+                  <label class="custom-control-label" for="customCheck10">Zone Level 1</label>
+                </div>
+              </div>
+            </div>
+            <div class="card shadow-sm mt-4">
+              <div class="card-header d-flex justify-content-between">
+                <h6 class="mb-0">Load Config Option</h6>
+                <div class="card-option">
+                  <a href="#" class="mr-2"><i class="fas fa-chevron-down"></i></a>
+                  <a href="#"><i class="fas fa-cog"></i></a>
+                </div>
+              </div>
+              <div class="card-body bg-gray border-bottom">
+                <div class="table-responsive">
+                  <table class="table table-bordered table-striped">
+                    <thead>
+                      <tr>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Config Setting</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                              <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                                <tr>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                </tr>
+                                  <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                    <tr>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                    </tr>
+                                      <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                      </tr>
+                                        <tr>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                        </tr>
+                                          <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                          </tr>
+                                            <tr>
+                                              <td></td>
+                                              <td></td>
+                                              <td></td>
+                                            </tr>
+                                              <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                              </tr>
+                                                <tr>
+                                                  <td></td>
+                                                  <td></td>
+                                                  <td></td>
+                                                </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- <div class="card-footer d-flex justify-content-between">
+                <div>
+                  <a href="#"><i class="fas fa-chevron-left"></i></a>
+                </div>
+                <div>
+                  <p class="mb-0">Damansara</p>
+                </div>
+                <div>
+                  <a href="#"><i class="fas fa-chevron-right"></i></a>
+                </div>
+
+              </div> -->
+            </div>
+          </div>
+          <div class="col-sm-9">
+            <div class="card shadow-sm">
+              <div class="card-header d-flex justify-content-between">
+                <h6 class="mb-0">Load Config Option</h6>
+                <div class="card-option">
+                  <a href="#" class="mr-2"><i class="fas fa-chevron-down"></i></a>
+                  <a href="#"><i class="fas fa-cog"></i></a>
+                </div>
+              </div>
+              <div class="card-body bg-gray border-bottom">
+                <form>
+                  <div class="form-group row">
+                    <div class="col-sm-5">
+                      <div class="row">
+                        <label for="inputEmail3" class="col-sm-4 col-form-label">Power Status</label>
+                        <div class="col-sm-8 custom-control custom-switch pt-2 text-right">
+                          <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                          <label class="custom-control-label" for="customSwitch1"></label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-7">
+                      <div class="row">
+                        <label for="inputEmail3" class="col-sm-4 col-form-label">Brightness</label>
+                        <div class="col-sm-8 text-right pt-3">
+                          <input type="range" class="custom-range" id="customRange1">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="form-row">
+                    <div class="form-group col-md-12">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck11">
+                        <label class="custom-control-label" for="customCheck11">Set Auto Power On/Off <em><small>Turn off light when reach specified limit</small></em></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-sm-4">
+                      <div class="row">
+                        <label for="inputEmail3" class="col-sm-4 col-form-label">Min Limit</label>
+                        <div class="col-sm-8">
+                          <input class="form-control" type="text" placeholder="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="row">
+                        <label for="inputEmail3" class="col-sm-4 col-form-label">Max Limit</label>
+                        <div class="col-sm-8">
+                          <input class="form-control" type="text" placeholder="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="row">
+                        <label for="inputEmail3" class="col-sm-3 col-form-label">Criteria</label>
+                        <div class="col-sm-9">
+                          <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio1"><small>Close if higher, Open when lower</small></label>
+                          </div>
+                          <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio2"><small>Open if higher, Close when lower</small></label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row mt-4">
+                    <div class="form-group col-md-12">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck12">
+                        <label class="custom-control-label" for="customCheck12">Set Scheduler</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-sm-5">
+                      <div class="row">
+                        <label for="inputEmail3" class="col-sm-4 col-form-label">Start Time</label>
+                        <div class="col-sm-6">
+                          <input class="form-control" type="text" placeholder="">
+                        </div>
+                        <label class="col-sm-2 col-form-label text-muted"><small>Hour</small></label>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="row">
+                        <div class="col-sm-8">
+                          <input class="form-control" type="text" placeholder="">
+                        </div>
+                        <label class="col-sm-4 col-form-label text-muted"><small>Min</small></label>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="row">
+                        <label for="inputEmail3" class="col-sm-4 col-form-label">Start Date</label>
+                        <div class="col-sm-8">
+                          <input class="form-control" type="text" placeholder="dd/mm/yyyy">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-sm-5">
+                      <div class="row">
+                        <label for="inputEmail3" class="col-sm-4 col-form-label">End Time</label>
+                        <div class="col-sm-6">
+                          <input class="form-control" type="text" placeholder="">
+                        </div>
+                        <label class="col-sm-2 col-form-label text-muted"><small>Hour</small></label>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="row">
+                        <div class="col-sm-8">
+                          <input class="form-control" type="text" placeholder="">
+                        </div>
+                        <label class="col-sm-4 col-form-label text-muted"><small>Min</small></label>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="row">
+                        <label for="inputEmail3" class="col-sm-4 col-form-label">End Date</label>
+                        <div class="col-sm-8">
+                          <input class="form-control" type="text" placeholder="dd/mm/yyyy">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <h6 class="mt-4">DAYS OF WEEK</h6>
+                  <div class="form-group row">
+                    <div class="col-sm-2">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck13">
+                        <label class="custom-control-label" for="customCheck13">Monday</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck14">
+                        <label class="custom-control-label" for="customCheck14">Tuesday</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck15">
+                        <label class="custom-control-label" for="customCheck15">Wednesday</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck16">
+                        <label class="custom-control-label" for="customCheck16">Thursday</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck17">
+                        <label class="custom-control-label" for="customCheck17">Friday</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck18">
+                        <label class="custom-control-label" for="customCheck18">Saturday</label>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="form-row mt-4">
+                    <div class="form-group col-md-12">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck19">
+                        <label class="custom-control-label" for="customCheck19">Set Auto Brightness/Dimming <em><small>Dim light when no movement in specified time</small></em></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-sm-5">
+                      <div class="row">
+                        <label for="inputEmail3" class="col-sm-4 col-form-label">Max Min</label>
+                        <div class="col-sm-8">
+                          <input class="form-control" type="text" placeholder="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-7">
+                      <div class="row">
+                        <label for="inputEmail3" class="col-sm-4 col-form-label">Brightness</label>
+                        <div class="col-sm-8 text-right pt-3">
+                          <input type="range" class="custom-range" id="customRange1">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row mt-4">
+                    <div class="form-group col-md-12">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck20">
+                        <label class="custom-control-label" for="customCheck21">Set Scheduler</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-sm-5">
+                      <div class="row">
+                        <label for="inputEmail3" class="col-sm-4 col-form-label">Start Time</label>
+                        <div class="col-sm-6">
+                          <input class="form-control" type="text" placeholder="">
+                        </div>
+                        <label class="col-sm-2 col-form-label text-muted"><small>Hour</small></label>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="row">
+                        <div class="col-sm-8">
+                          <input class="form-control" type="text" placeholder="">
+                        </div>
+                        <label class="col-sm-4 col-form-label text-muted"><small>Min</small></label>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="row">
+                        <label for="inputEmail3" class="col-sm-4 col-form-label">Start Date</label>
+                        <div class="col-sm-8">
+                          <input class="form-control" type="text" placeholder="dd/mm/yyyy">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-sm-5">
+                      <div class="row">
+                        <label for="inputEmail3" class="col-sm-4 col-form-label">End Time</label>
+                        <div class="col-sm-6">
+                          <input class="form-control" type="text" placeholder="">
+                        </div>
+                        <label class="col-sm-2 col-form-label text-muted"><small>Hour</small></label>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="row">
+                        <div class="col-sm-8">
+                          <input class="form-control" type="text" placeholder="">
+                        </div>
+                        <label class="col-sm-4 col-form-label text-muted"><small>Min</small></label>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="row">
+                        <label for="inputEmail3" class="col-sm-4 col-form-label">End Date</label>
+                        <div class="col-sm-8">
+                          <input class="form-control" type="text" placeholder="dd/mm/yyyy">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <h6>DAYS OF WEEK</h6>
+                  <div class="form-group row">
+                    <div class="col-sm-2">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck22">
+                        <label class="custom-control-label" for="customCheck22">Monday</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck23">
+                        <label class="custom-control-label" for="customCheck23">Tuesday</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck24">
+                        <label class="custom-control-label" for="customCheck24">Wednesday</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck25">
+                        <label class="custom-control-label" for="customCheck25">Thursday</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck26">
+                        <label class="custom-control-label" for="customCheck26">Friday</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck27">
+                        <label class="custom-control-label" for="customCheck28">Saturday</label>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="form-row">
+                    <div class="form-group col-md-12">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck29">
+                        <label class="custom-control-label" for="customCheck29">Push Alert (Email)</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email To</label>
+                    <div class="col-sm-10">
+                      <select class="custom-select">
+                        <option selected>Select Email</option>
+                        <option value="1">anita@gmail.com</option>
+                        <option value="2">siti@gmail.com</option>
+                        <option value="3">nurul@gmail.com</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="text-right">
+                  <button class="btn btn-secondary" disabled>Revert To Previous Setting</button>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#save">Save</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="warning" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Controller Settings: Warning!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <p>Sorry, the system can't load controller configuration for the selected zone. There was no configuration setup that could be found.</p>
+            <p>Proceed with the controller configuration for the zone and save it.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="save" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Controller Settings: Save Setting</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <p>Save controller setting for this zone?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <a href="controller-configuration3.html" type="button" class="btn btn-primary">Yes</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/main.js"></script>
+    <!-- <script src="fontawesome/js/all.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+  </body>
+</html>

@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>SCEMP</title>
+  </head>
+  <body>
+    <nav class="header fixed-top">
+      <a id="menu" href="#" class="menu" onclick="togNav()">
+        <i id="menuicon" class="fas fa-bars"></i>
+      </a>
+      <div id="header">
+        <div class="header-left">
+          <div class="logo d-flex">
+            <h3 class="mb-0 text-primary"><i class="fas fa-power-off"></i></h3>
+            <h3 class="mb-0 text-primary ml-2">SCEMP</h3>
+          </div>
+          <p class="mb-0 text-muted" style="line-height: 0.5;"><small>Synergy Coologic Energy Managing Platform</small></p>
+        </div>
+        <div class="header-right">
+          <div class="dropdown notification">
+            <a class="btn-notification dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="material-icons">notifications</i>
+            </a>
+
+            <div class="dropdown-menu dropdown-menu-sm-right" aria-labelledby="dropdownMenuLink">
+              <div class="dropdown-menu-header">
+                <h6 class="dropdown-menu-title">Notification</h6>
+                <div class="dropdown-option">
+                  <a href="">Filter List</a>
+                  <a href="">Settings</a>
+                </div>
+              </div>
+              <!-- <div class="list-group"> -->
+                <a href="#" class="list-group-item list-group-item-action bg-gray dropdown-item border-left-0 border-right-0 bprder-top-0">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Assistant Manager</h5>
+                    <small>3 days ago</small>
+                  </div>
+                  <p class="mb-1"><span class="text-warning">Warning</span> on <strong>Level B2</strong>.</p>
+                  <small>Light Failure, donec id elit non mi porta.</small>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-gray dropdown-item border-left-0 border-right-0">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Project Engineer </h5>
+                    <small class="text-muted">3 days ago</small>
+                  </div>
+                  <p class="mb-1"><span class="text-primary">Appreciated</span> your work yesterday.</p>
+                  <small class="text-muted">Good Job! Donec id elit non mi porta.</small>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-gray dropdown-item border-left-0 border-right-0 border-bottom-0">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Project Executive</h5>
+                    <small class="text-muted">3 days ago</small>
+                  </div>
+                  <p class="mb-1"><strong>20+ new items</strong> added at store room.</p>
+                  <small class="text-muted">Donec id elit non mi porta.</small>
+                </a>
+              <!-- </div>
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a> -->
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle user-profile dropdown-menu-sm-right" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="http://via.placeholder.com/500x500" alt="">
+            </a>
+            <div class="dropdown-menu dropdown-user" aria-labelledby="dropdownMenu2">
+              <a href="#" class="dropdown-item" type="button">My Profile</a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item" >Dark Mode</a>
+              <a href="#" class="dropdown-item" type="button">Settings</a>
+              <a href="login.html" class="dropdown-item" type="button">Logout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div id="mySidenav" class="side-nav open" style="width: 80px;">
+      <ul class="main-menu">
+        <li class="nav-item active">
+          <a href="dashboard.html">
+            <i class="fas fa-home"></i>
+            <p class="m-0">Dashboard</p>
+          </a>
+        </li>
+        <li>
+          <a href="controller-configuration.html">
+            <i class="fas fa-tools"></i>
+            <p class="m-0">Tools</p>
+          </a>
+        </li>
+        <li>
+          <a href="charts.html">
+            <i class="fas fa-chart-line"></i>
+            <p class="m-0">Charts</p>
+          </a>
+        </li>
+        <li>
+          <a href="button.html">
+            <i class="fas fa-list-ul"></i>
+            <p class="m-0">Buttons</p>
+          </a>
+        </li>
+        <li>
+          <a href="form.html">
+            <i class="fas fa-images"></i>
+            <p class="m-0">Forms</p>
+          </a>
+        </li>
+        <li>
+          <a href="color.html">
+            <i class="fas fa-sync"></i>
+            <p class="m-0">Colors</p>
+          </a>
+        </li>
+        <li>
+          <a href="accordion.html">
+            <i class="fas fa-cog"></i>
+            <p class="m-0">Accordion</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="navbar d-sm-none">
+      <a href="dashboard.html" class="active">
+        <i class="fas fa-home"></i>
+        <p class="m-0">Dashboard</p>
+      </a>
+      <a href="controller-configuration.html">
+        <i class="fas fa-tools"></i>
+        <p class="m-0">Tools</p>
+      </a>
+      <a href="charts.html">
+        <i class="fas fa-chart-line"></i>
+        <p class="m-0">Charts</p>
+      </a>
+      <a href="#contact">
+        <i class="fas fa-list-ul"></i>
+        <p class="m-0">More</p>
+      </a>
+    </div>
+
+    <div id="main">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 page-title">
+            <h2><span class="text-primary">Smart</span> Lighting Dashboard</h2>
+            <nav class="breadcrumb-container" aria-label="breadcrumb">
+              <ol class="breadcrumb pt-0">
+                <li class="breadcrumb-item">
+                    <a href="#">Home</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+              </ol>
+            </nav>
+            <hr>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="card shadow-sm">
+              <div class="card-header d-flex justify-content-between">
+                <h6 class="mb-0">Connection Status</h6>
+                <div class="card-option">
+                  <a href="#" class="mr-2"><i class="fas fa-chevron-down"></i></a>
+                  <a href="#"><i class="fas fa-cog"></i></a>
+                </div>
+              </div>
+              <div class="card-body bg-gray">
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio1">Zone Area : Common Area - LG</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio2">Zone Area : Level B1</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio3">Zone Area : Level B2</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio4">Zone Area : UG</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio5" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio5">Zone Area : CC</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio6" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio6">Zone Area : Level 1</label>
+                </div>
+              </div>
+            </div>
+            <div class="card shadow-sm mt-4">
+              <div class="card-header d-flex justify-content-between">
+                <h6 class="mb-0">Weather Today</h6>
+                <div class="card-option">
+                  <a href="#" class="mr-2"><i class="fas fa-chevron-down"></i></a>
+                  <a href="#"><i class="fas fa-cog"></i></a>
+                </div>
+              </div>
+              <div class="card-body bg-gray border-bottom">
+                <div class="d-flex justify-content-between">
+                  <div class="text-center">
+                    <i class="fas fa-cloud-sun display-4"></i>
+                    <p>Mostly Cloudy</p>
+                  </div>
+                  <h1 class="display-3">34<span>&#176;</span></h1>
+                </div>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-gray p-0">
+                  <div class="scroll-row">
+                    <div id="3am" class="scroll-box">
+                      <h6>3am</h6>
+                      <p class="mb-0">34<span>&#176;</span></p>
+                    </div>
+                    <div id="6am" class="scroll-box">
+                      <h6>6am</h6>
+                      <p class="mb-0">32<span>&#176;</span></p>
+                    </div>
+                    <div id="9am" class="scroll-box">
+                      <h6>9am</h6>
+                      <p class="mb-0">31<span>&#176;</span></p>
+                    </div>
+                    <div id="12pm" class="scroll-box">
+                      <h6>12pm</h6>
+                      <p class="mb-0">30<span>&#176;</span></p>
+                    </div>
+                    <div id="3pm" class="scroll-box">
+                      <h6>3pm</h6>
+                      <p class="mb-0">34<span>&#176;</span></p>
+                    </div>
+                    <div id="6pm" class="scroll-box">
+                      <h6>6pm</h6>
+                      <p class="mb-0">32<span>&#176;</span></p>
+                    </div>
+                    <div id="9pm" class="scroll-box">
+                      <h6>9pm</h6>
+                      <p class="mb-0">31<span>&#176;</span></p>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item bg-gray">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <h6>Sunrise</h6>
+                      <p class="mb-0">7:08am</p>
+                    </div>
+                    <div class="text-right">
+                      <h6>Sunset</h6>
+                      <p class="mb-0">7:08pm</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item bg-gray">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <h6>Chance of Rain</h6>
+                      <p class="mb-0">50%</p>
+                    </div>
+                    <div class="text-right">
+                      <h6>Humidity</h6>
+                      <p class="mb-0">80%</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item bg-gray">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <h6>Wind</h6>
+                      <p class="mb-0">SE 10km/h</p>
+                    </div>
+                    <div class="text-right">
+                      <h6>Feels Like</h6>
+                      <p class="mb-0">37<span>&#176;</span></p>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item bg-gray">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <h6>Visibility</h6>
+                      <p class="mb-0">9.7km</p>
+                    </div>
+                    <div class="text-right">
+                      <h6>UV Index</h6>
+                      <p class="mb-0">4</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="card-footer d-flex justify-content-between">
+                <div>
+                  <a href="#"><i class="fas fa-chevron-left"></i></a>
+                </div>
+                <div>
+                  <p class="mb-0">Damansara</p>
+                </div>
+                <div>
+                  <a href="#"><i class="fas fa-chevron-right"></i></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-9">
+            <div class="row match-height">
+              <div class="col-sm-5">
+                <div class="card shadow-sm">
+                  <div class="card-header d-flex justify-content-between">
+                    <h6 class="mb-0">Lighting Quick Control</h6>
+                    <div class="card-option">
+                      <a href="#" class="mr-2"><i class="fas fa-chevron-down"></i></a>
+                      <a href="#"><i class="fas fa-cog"></i></a>
+                    </div>
+                  </div>
+                  <div class="card-body bg-gray text-center">
+                    <div class="custom-control custom-switch text-right">
+                      <input type="checkbox" onclick="changeImage()" class="custom-control-input" id="customSwitch1">
+                      <label class="custom-control-label" for="customSwitch1"></label>
+                    </div>
+                    <img id="myImage" src="img/Bulb/pic_bulboff.gif" width="100" height="180">
+                    <div class="">
+                      <label for="customRange1"></label>
+                      <input type="range" class="custom-range custom-range-primary" id="customRange1">
+                    </div>
+                  </div>
+                  <div class="card-footer d-flex justify-content-between">
+                    <div>
+                      <a href="#"><i class="fas fa-chevron-left"></i></a>
+                    </div>
+                    <div>
+                      <p class="mb-0">Zone Area : Common Area - LG</p>
+                    </div>
+                    <div>
+                      <a href="#"><i class="fas fa-chevron-right"></i></a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-7">
+                <div class="card shadow-sm">
+                  <div class="card-header d-flex justify-content-between">
+                    <h6 class="mb-0">Energy Reading</h6>
+                    <div class="card-option">
+                      <a href="#" class="mr-2"><i class="fas fa-chevron-down"></i></a>
+                      <a href="#"><i class="fas fa-cog"></i></a>
+                    </div>
+                  </div>
+                  <div class="card-body bg-gray text-center">
+                    <canvas id="line-chart" width="750" height="350"></canvas>
+                  </div>
+                  <div class="card-footer d-flex justify-content-between">
+                    <div>
+                      <a href="#"><i class="fas fa-chevron-left"></i></a>
+                    </div>
+                    <div>
+                      <p class="mb-0">Zone Area : Common Area - LG</p>
+                    </div>
+                    <div>
+                      <a href="#"><i class="fas fa-chevron-right"></i></a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 mt-4">
+                <div class="card shadow-sm">
+                  <div class="card-header d-flex justify-content-between">
+                    <h6 class="mb-0">Summary Overview</h6>
+                    <div class="card-option">
+                      <a href="#" class="mr-2"><i class="fas fa-chevron-down"></i></a>
+                      <a href="#"><i class="fas fa-cog"></i></a>
+                    </div>
+                  </div>
+                  <div class="card-body bg-gray text-center">
+                    <div class="row">
+                      <div class="col-sm-7">
+                        <canvas id="line-chart2" width="750" height="400"></canvas>
+                      </div>
+                      <div class="col-sm-5">
+                        <div class="row border-bottom">
+                          <div class="col-sm-6 border-right">
+                            <h2>78</h2>
+                            <p>kWh (Today)</p>
+                          </div>
+                          <div class="col-sm-6">
+                            <h2>158</h2>
+                            <p>Total kWh (Monthly)</p>
+                          </div>
+                        </div>
+                        <div class="row mt-2 border-bottom">
+                          <div class="col-sm-6 border-right">
+                            <h2>350</h2>
+                            <p>Indoor Light</p>
+                          </div>
+                          <div class="col-sm-6">
+                            <h2>570</h2>
+                            <p>Outdoor Light</p>
+                          </div>
+                        </div>
+                        <div class="row mt-2 border-bottom">
+                          <div class="col-sm-6 border-right">
+                            <h2>33<span>&#176;</span></h2>
+                            <p>Temperature</p>
+                          </div>
+                          <div class="col-sm-6">
+                            <h2>87%</h2>
+                            <p>Humidity</p>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer d-flex justify-content-between">
+                    <div>
+                      <a href="#"><i class="fas fa-chevron-left"></i></a>
+                    </div>
+                    <div>
+                      <p class="mb-0">Zone Area : Common Area - LG</p>
+                    </div>
+                    <div>
+                      <a href="#"><i class="fas fa-chevron-right"></i></a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/main.js"></script>
+    <!-- <script src="fontawesome/js/all.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script type="text/javascript">
+    $(function() {
+      var hour = (new Date).getHours() -10;
+
+      // $('.select').removeClass('select');
+
+      if (hour < 3) {
+          $('#3am').addClass('active');
+      } else if (hour < 6) {
+          $('#6am').addClass('active');
+      } else if (hour < 9) {
+          $('#3am').addClass('active');
+      } else if (hour < 12) {
+          $('#12pm').addClass('active');
+      } else if (hour < 15) {
+          $('#3pm').addClass('active');
+      } else if (hour < 18) {
+          $('#6pm').addClass('active');
+      } else if (hour < 21) {
+          $('#9pm').addClass('active');
+      }
+
+    })
+    </script>
+    <script>
+    function changeImage() {
+      var image = document.getElementById('myImage');
+      if (image.src.match("bulbon")) {
+        image.src = "img/Bulb/pic_bulboff.gif";
+      } else {
+        image.src = "img/Bulb/pic_bulbon.gif";
+      }
+    }
+    </script>
+    <script>
+    var ctx = document.getElementById('line-chart');
+    var myChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: [10,20,30,40,50,60,70,80,90,100],
+        datasets: [{
+            data: [45,32,77,66,43,59,60,48,40,79],
+            label: "Today",
+            borderColor: "#07a479",
+            fill: false
+          }, {
+            data: [50,35,61,71,55,84,39,47,45,70],
+            label: "Average",
+            borderColor: "#8e5ea2",
+            fill: false
+          }
+        ]
+      },
+      options: {
+        title: {
+          display: true,
+          text: 'Average Energy Reading'
+        }
+      }
+    });
+    </script>
+    <script>
+    var ctx = document.getElementById('line-chart2');
+    var myChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: [20,40,60,80,100,120,140,160,180,200],
+        datasets: [{
+            data: [45,78,55,112,98,80,99,106,140,120],
+            label: "Today kWh",
+            borderColor: "#07a479",
+            fill: false
+          }, {
+            data: [110,89,77,95,130,145,111,95,80,97],
+            label: "Total kWh",
+            borderColor: "#8e5ea2",
+            fill: false
+          }
+        ]
+      },
+      options: {
+        title: {
+          display: true,
+          text: 'Summary Overview'
+        }
+      }
+    });
+    </script>
+
+  </body>
+</html>

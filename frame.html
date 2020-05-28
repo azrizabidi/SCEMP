@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>SmartLighting</title>
+  </head>
+  <body>
+    <nav class="header fixed-top">
+      <!-- <a id="menu" href="#" class="menu" onclick="togNav()"> -->
+      <a id="menu" href="#" class="menu">
+        <i id="menuicon" class="fas fa-bars"></i>
+      </a>
+      <div id="header">
+        <div class="header-left">
+          <h4 class="logo"><a href="#">Smart<span>Lighting</span></a></h4>
+        </div>
+        <div class="header-right">
+          <div class="dropdown notification">
+            <a class="btn-notification dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="material-icons">notifications</i>
+            </a>
+
+            <div class="dropdown-menu dropdown-menu-sm-right" aria-labelledby="dropdownMenuLink">
+              <div class="dropdown-menu-header">
+                <h6 class="dropdown-menu-title">Activity Logs</h6>
+                <div>
+                  <a href="">Filter List</a>
+                  <a href="">Settings</a>
+                </div>
+              </div>
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle user-profile dropdown-menu-sm-right" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="http://via.placeholder.com/500x500" alt="">
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <a href="#" class="dropdown-item" type="button"><i class="fas fa-bars"></i>My Profile</a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item" disabled>Dark Mode
+                <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider round"></span>
+                </label>
+              </a>
+              <a href="#" class="dropdown-item" type="button">Settings</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div id="mySidenav" class="side-nav active">
+      <ul class="main-menu">
+        <li class="nav-item active">
+          <a href="dashboard.html"><i class="fas fa-home"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-desktop"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-chart-line"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-list-ul"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-images"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-sync"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-cog"></i></a>
+        </li>
+      </ul>
+      <ul class="sub-menu">
+        <div class="scroll">
+          <ul class="list-unstyled" data-link="dashboard">
+            <li>
+              <a href="Dashboard.Default.html">
+                <i class="simple-icon-rocket"></i> Default
+              </a>
+            </li>
+            <li>
+              <a href="Dashboard.Analytics.html">
+                <i class="simple-icon-pie-chart"></i>Analytics
+              </a>
+            </li>
+            <li>
+              <a href="Dashboard.Ecommerce.html">
+                <i class="simple-icon-basket-loaded"></i> Ecommerce
+              </a>
+            </li>
+            <li>
+              <a href="Dashboard.Content.html">
+                <i class="simple-icon-doc"></i> Content
+              </a>
+            </li>
+          </ul>
+        </div>
+      </ul>
+    </div>
+
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="main">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6">
+            <h2>Hi <span class="text-primary">John</span>!</h2>
+            <h4>Welcome back to <span class="text-primary">Smart</span>Lighting.</h4>
+            <h6 class="text-muted">Your Future Energy Monitor</h6>
+            <p class="text-justify my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="text-justify my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a href="#">Read More..</a>
+          </div>
+          <div class="col-sm-6">
+            <div class="row mb-5">
+              <div class="col-sm-12 mb-3">
+                <div class="card shadow-sm">
+                  <div class="card-header">
+                    Consumption By Room
+                  </div>
+                  <div class="card-body bg-grey-primary">
+                    <canvas id="myChart" width="400" height="100"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="card shadow-sm">
+                  <div class="card-body bg-grey-primary">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="card shadow-sm">
+                  <div class="card-body bg-grey-primary">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="card shadow-sm">
+              <div class="card-body bg-grey-primary">
+                <div class="card-body-title">
+                  <h5 class="card-title">Card title</h5>
+                  <ul class="nav nav-pills card-header-pills">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Day</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Week</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Month</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">Year</a>
+                    </li>
+                  </ul>
+
+                </div>
+                <canvas id="line-chart" width="800" height="250"></canvas>
+                <img src="img/Dashboard3.png" width="100%">
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/main.js"></script>
+    <!-- <script src="fontawesome/js/all.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script type="text/javascript">
+    $('.menu').click(function() {
+      var clicks = $(this).data('clicks');
+      if (clicks) {
+         $('.sub-menu').toggleClass('active');
+      } else {
+          $('.side-nav').toggleClass('active');
+      }
+      $(this).data("clicks", !clicks);
+    });
+
+    $(".menu").on("click", function() {
+      event.preventDefault();
+      if ($(".app-menu").hasClass("shown")) {
+        $(".app-menu").removeClass("shown");
+      } else {
+        $(".app-menu").addClass("shown");
+      }
+    });
+
+    </script>
+    <script>
+      var ctx = document.getElementById('myChart2');
+      var myLineChart = new Chart(ctx, {
+          type: 'line',
+          data: {
+              labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+              datasets: [{
+                  label: '# of Votes',
+                  data: [12, 19, 3, 5, 2, 3],
+                  backgroundColor: [
+                      'rgba(255, 99, 132, 0.2)',
+                      'rgba(54, 162, 235, 0.2)',
+                      'rgba(255, 206, 86, 0.2)',
+                      'rgba(75, 192, 192, 0.2)',
+                      'rgba(153, 102, 255, 0.2)',
+                      'rgba(255, 159, 64, 0.2)'
+                  ],
+                  borderColor: [
+                      'rgba(255, 99, 132, 1)',
+                      'rgba(54, 162, 235, 1)',
+                      'rgba(255, 206, 86, 1)',
+                      'rgba(75, 192, 192, 1)',
+                      'rgba(153, 102, 255, 1)',
+                      'rgba(255, 159, 64, 1)'
+                  ],
+                  borderWidth: 1
+              }]
+          },
+          options: options
+      });
+    </script>
+    <script>
+    var ctx = document.getElementById('myChart');
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+                label: '# of Votes',
+                data: [12, 19, 3, 5, 2, 3],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+    <script>
+    var ctx = document.getElementById('line-chart');
+    var myChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: [1500,1600,1700,1750,1800,1850,1900,1950,1999,2050],
+        datasets: [{
+            data: [86,114,106,106,107,111,133,221,783,2478],
+            label: "Africa",
+            borderColor: "#3e95cd",
+            fill: false
+          }, {
+            data: [282,350,411,502,635,809,947,1402,3700,5267],
+            label: "Asia",
+            borderColor: "#8e5ea2",
+            fill: false
+          }, {
+            data: [168,170,178,190,203,276,408,547,675,734],
+            label: "Europe",
+            borderColor: "#3cba9f",
+            fill: false
+          }, {
+            data: [40,20,10,16,24,38,74,167,508,784],
+            label: "Latin America",
+            borderColor: "#e8c3b9",
+            fill: false
+          }, {
+            data: [6,3,2,2,7,26,82,172,312,433],
+            label: "North America",
+            borderColor: "#c45850",
+            fill: false
+          }
+        ]
+      },
+      options: {
+        title: {
+          display: true,
+          text: 'World population per region (in millions)'
+        }
+      }
+    });
+    </script>
+
+  </body>
+</html>
