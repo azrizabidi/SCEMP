@@ -57,6 +57,15 @@ main.default-transition {
     width: 60%;
     padding: 80px;
 }
+
+
+@media screen and (max-width: 767px) {
+  .auth-card .form-side {
+      width: 100%;
+      padding: 20px;
+  }
+}
+
 body.background main .container {
     height: 100%;
 }
@@ -84,7 +93,7 @@ body.background main .container {
             <div class="row h-100">
                 <div class="col-12 col-md-10 mx-auto my-auto" style="margin-top: 150px !important;">
                     <div class="card auth-card">
-                        <div class="position-relative image-side ">
+                        <div class="position-relative image-side d-none d-sm-block">
                             <div class="mb-4">
                               <div class="logo d-flex">
                                 <h1 class="mb-0 text-primary"><i class="fas fa-power-off"></i></h1>

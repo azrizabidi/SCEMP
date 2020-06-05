@@ -13,6 +13,28 @@ function togNav() {
   }
 }
 
-$( "#menuicon" ).click(function() {
-        $(this).find(".icon").toggleClass('fa-bars fa-stream',1500);
-    });
+// function secNav() {
+//   var nav = document.getElementById("secnav");
+//   var main = document.getElementById("main");
+//   var menu = document.getElementById("menu");
+//   if (nav.style.width == '80px') {
+//     nav.style.width = '0';
+//     main.style.marginLeft = '0';
+//     menu.classList.add("active");
+//   } else {
+//     nav.style.width = "80px";
+//     main.style.marginLeft = '80px';
+//     menu.classList.remove("active");
+//   }
+// }
+
+
+// $( "#menuicon" ).click(function() {
+//         $(this).find(".icon").toggleClass('fa-bars fa-stream',1500);
+//     });
+
+$(document).ready(function () {
+  $('#mySidenav dropdown a').on('click', function () {
+      $('#mySidenav').toggleClass('expand');
+  });
+});
