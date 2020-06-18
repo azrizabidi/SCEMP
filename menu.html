@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+    aside {
+  height: 100%;
+  position:fixed;
+}
+
+.sidebar {
+  height: 100%;
+  width: 80px;
+  text-align: center;
+  background-color: #f1f3f6;
+  -moz-box-shadow: 7px 7px 14px #e5e7ea;
+  -webkit-box-shadow: 7px 7px 14px #e5e7ea;
+  box-shadow: 7px 7px 14px #e5e7ea;
+  transition: all 1s  ease-in-out;
+}
+
+.sidebar ul.list-sidebar {
+  list-style: none;
+  margin: 0 10px;
+  padding: 0px;
+  transform: translate(0%, 30%);
+  /* transition: all 2s  ease-in-out; */
+}
+
+.sidebar .list-sidebar > li {
+  border-bottom:  0px solid #eaeaea;
+  /* transition: all 1s  ease-in-out; */
+  /* margin-bottom: 10px; */
+  position: relative;
+}
+
+.sidebar ul.sub-menu {
+  list-style: none;
+  padding-left: 0px;
+  transform: translate(0%, 0%);
+}
+
+.sidebar .list-sidebar > li.active {
+  box-shadow: 7px 7px 14px #e5e7ea, -7px -7px 14px #fdffff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.sidebar .list-sidebar li a {
+  display: inline-flex;
+  padding:12px 20px;
+  color:#575757;
+  /* border-left:0px solid #dedede; */
+  text-decoration:none;
+  width: 100%;
+  overflow: hidden;
+}
+
+.sidebar .list-sidebar li:hover {
+  border-radius: 5px;
+  box-shadow: 7px 7px 14px #e5e7ea, -7px -7px 14px #fdffff;
+  color: #575757;
+  border-left: none;
+  transition: all 1s  ease-in-out;
+}
+
+/* .sidebar .list-sidebar > li > a:hover ul.submenu {
+  border-radius: 5px;
+  box-shadow: 7px 7px 14px #e5e7ea, -7px -7px 14px #fdffff;
+  color: #575757;
+  border-left: none;
+  transition: all 1s  ease-in-out;
+} */
+
+.sidebar .list-sidebar > li.active > a {
+  border-radius: 5px;
+  /* box-shadow: 7px 7px 14px #e5e7ea, -7px -7px 14px #fdffff; */
+  color: #07a479;
+  border-left: none;
+}
+
+.sidebar li a .nav-label,
+.sidebar li a .nav-label+span {
+  display: inline-flex;
+  /* width: 0; */
+  /* transition: all 1s  ease-in-out; */
+  margin-left: 35px;
+}
+
+.sidebar .sub-menu {
+  position: absolute;
+  left: 70px;
+  top: 0;
+  width: 200px;
+  z-index: 100;
+  background: #f1f3f6;
+  box-shadow: 7px 7px 14px #e5e7ea, 0px -3px 5px #fdffff;
+  border-radius: 0 5px 5px 0;
+  border-left: 1px solid #e5e7ea;
+  transition: all 1s  ease-in-out;
+}
+
+.sidebar ul li .sub-menu li {
+  border-bottom: 1px solid #eaeaea;
+}
+
+.sidebar ul li .sub-menu li a {
+  position:relative;
+  /* transition: 1s; */
+}
+
+.sidebar ul li .sub-menu li a:hover {
+  padding-left:20px;
+  /* transition: all 1s  ease-in-out; */
+}
+
+.sidebar li a .nav-label,
+.sidebar li a .nav-label+span,
+.sidebar .sub-menu li a {
+  /* transition: all 1s  ease-in-out; */
+  font-size: 12px;
+}
+
+.sidebar.open {
+  width:220px;
+  transition: all 1s  ease-in-out;
+  overflow-y: auto;
+}
+
+.sidebar.open .list-sidebar {
+  transform: translate(0%, 0%);
+  margin: 0;
+  transition: all 1s  ease-in-out;
+  /* box-shadow: 7px 7px 14px #e5e7ea, -7px -7px 14px #fdffff; */
+}
+
+.sidebar.open .list-sidebar > li {
+  border-bottom: 1px solid #eaeaea;
+  transition: all 1s  ease-in-out;
+}
+
+.sidebar.open .list-sidebar > li.active {
+  box-shadow: none;
+  margin-bottom: 0;
+}
+
+.sidebar.open .list-sidebar > li > a {
+  margin-left: 0px;
+  padding-left: 34px;
+  transition: all 1s  ease-in-out;
+}
+
+.sidebar.open .list-sidebar > li.active > a {
+  border-left: 4px solid #07a479;
+  color: #07a479;
+  transition: all 1s  ease-in-out;
+  margin-left: 0;
+  padding-left: 30px;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.sidebar.open li a[aria-expanded="true"] span.fa-chevron-left {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.sidebar.open li a .nav-label,
+.sidebar.open li a .nav-label+span {
+  transition: all 1s  ease-in-out;
+  margin-left: 10px;
+  width: auto;
+}
+
+.sidebar.open .list-sidebar a > .fa-chevron-left {
+  position: absolute;
+  right: 20px;
+}
+
+/* .sidebar.open .list-sidebar > li > .sub-menu li {
+  border-left: 1px solid #eaeaea;
+} */
+
+.sidebar.open .list-sidebar > li > .sub-menu {
+  width: 100%;
+  position: initial;
+  box-shadow: inset 3px 5px 7px #eaeaea, inset -5px -5px 7px #f9f9f9;
+  transition: all 1s ease-in-out;
+  border-top: 1px solid #eaeaea;
+}
+
+.sidebar.open .list-sidebar > li > .sub-menu li a {
+  margin-left: 30px;
+}
+
+.sidebar.open .list-sidebar li.active > ul.sub-menu li.active a {
+  color: #07a479;
+  font-weight: 600;
+  /* margin-left: 6px; */
+}
+
+.sidebar.close {
+  width: 0;
+  /* box-shadow: 0px 0px 0px #f1f3f6; */
+  overflow: hidden;
+  transition: all 1s  ease-in-out;
+}
+
+.sidebar.close .list-sidebar {
+  transform: translate(0%, 30%);
+  transition: all 1s  ease-in-out;
+  overflow: hidden;
+}
+
+    </style>
+
+    <title>SCEMP</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav id="top" class="navbar navbar-toggleable-md navbar-light pt-0 pb-0 ">
+        <div class="nav-left">
+          <a id="btn-sidebar" href="#" class="btn btn-primary"><span class="fa fa-fw fa-bars "></span></a>
+          <div class="center">
+            <div class="logo">
+              <h3><i class="fas fa-power-off"></i></h3>
+              <h3 class="ml-2">SCEMP</h3>
+            </div>
+            <p class="text-muted"><small>Synergy Coologic Energy Managing Platform</small></p>
+          </div>
+        </div>
+        <div class="nav-right">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown messages-menu">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-envelope"></i>
+                <span class="label label-success bg-success">10</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <ul class="dropdown-menu-over list-unstyled">
+                  <li class="header-ul text-center">You have 4 messages</li>
+                  <li>
+                    <!-- inner menu: contains the actual data -->
+                    <ul class="menu list-unstyled">
+                      <li><!-- start message -->
+                      <a href="#">
+                        <div class="pull-left">
+                          <img src="http://via.placeholder.com/160x160" class="rounded-circle  " alt="User Image">
+                        </div>
+                        <h4>
+                        Support Team
+                        <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                        </h4>
+                        <p>Why not buy a new awesome theme?</p>
+                      </a>
+                    </li>
+                    <!-- end message -->
+                    <li>
+                      <a href="#">
+                        <div class="pull-left">
+                          <img src="http://via.placeholder.com/160x160" class="rounded-circle " alt="User Image">
+                        </div>
+                        <h4>
+                        AdminLTE Design Team
+                        <small><i class="fa fa-clock-o"></i> 2 hours</small>
+                        </h4>
+                        <p>Why not buy a new awesome theme?</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="pull-left">
+                          <img src="http://via.placeholder.com/160x160" class="rounded-circle " alt="User Image">
+                        </div>
+                        <h4>
+                        Developers
+                        <small><i class="fa fa-clock-o"></i> Today</small>
+                        </h4>
+                        <p>Why not buy a new awesome theme?</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="pull-left">
+                          <img src="http://via.placeholder.com/160x160" class="rounded-circle " alt="User Image">
+                        </div>
+                        <h4>
+                        Sales Department
+                        <small><i class="fa fa-clock-o"></i> Yesterday</small>
+                        </h4>
+                        <p>Why not buy a new awesome theme?</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="pull-left">
+                          <img src="http://via.placeholder.com/160x160" class="rounded-circle " alt="User Image">
+                        </div>
+                        <h4>
+                        Reviewers
+                        <small><i class="fa fa-clock-o"></i> 2 days</small>
+                        </h4>
+                        <p>Why not buy a new awesome theme?</p>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                  <li class="footer-ul text-center"><a href="#">See All Messages</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item dropdown notifications-menu">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bell"></i>
+                <span class="label label-warning bg-warning">10</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <ul class="dropdown-menu-over list-unstyled">
+                  <li class="header-ul text-center">You have 10 notifications</li>
+                  <li>
+                    <!-- inner menu: contains the actual data -->
+                    <ul class="menu list-unstyled">
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the
+                          page and may cause design problems
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-users text-red"></i> 5 new members joined
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-shopping-cart text-green"></i> 25 sales made
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-user text-red"></i> You changed your username
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="footer-ul text-center"><a href="#">View all</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown  user-menu">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="img/balloon.jpg" class="user-image" alt="User Image" >
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+          <!-- <a href="#" class="btn btn-primary"><i class="fas fa-bell"></i></a> -->
+        </div>
+      </nav>
+    </header>
+
+    <aside>
+      <div class="sidebar left sidebar-xs">
+        <ul class="list-sidebar">
+          <li class="active">
+            <a href="#"><i class="fas fa-home"></i><span class="nav-label"> Dashboard </span></a>
+          </li>
+          <li><a href="charts.html" class="open"><i class="fas fa-tasks"></i><span class="nav-label">Analysis</span>  </a></li>
+          <li>
+            <a href="#" data-toggle="collapse" data-target="#controller" class="collapsed active" >
+              <i class="fas fa-tools"></i>
+              <span class="nav-label">Controller</span>
+              <span class="fas fa-chevron-left pull-right"></span>
+            </a>
+            <ul class="sub-menu collapse" id="controller">
+              <li><a href="controller.html">Tools</a></li>
+              <li><a href="#">Export</a></li>
+              <li><a href="#">File Upload</a></li>
+              <li><a href="#">Coologic Console</a></li>
+              <li><a href="#">Baseline</a></li>
+              <li><a href="#">Translator</a></li>
+              <li><a href="#">System Log</a></li>
+              <li><a href="#">Map</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" data-toggle="collapse" data-target="#system" class="collapsed active" >
+              <i class="fas fa-desktop"></i>
+              <span class="nav-label">System</span>
+              <span class="fas fa-chevron-left pull-right"></span>
+            </a>
+            <ul class="sub-menu collapse" id="system">
+              <li><a href="#">Location</a></li>
+              <li><a href="#">Site</a></li>
+              <li><a href="#">Equipment</a></li>
+              <li><a href="#">Coologic</a></li>
+              <li><a href="#">Site Types</a></li>
+              <li><a href="#">UOM</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" data-toggle="collapse" data-target="#security" class="collapsed active" >
+              <i class="fas fa-users"></i>
+              <span class="nav-label">Security</span>
+              <span class="fas fa-chevron-left pull-right"></span>
+            </a>
+            <ul class="sub-menu collapse" id="security">
+              <li><a href="#">User Group</a></li>
+              <li><a href="#">User List</a></li>
+            </ul>
+          </li>
+          <li><a href="charts.html" class="open"><i class="fas fa-chart-line"></i><span class="nav-label">Charts</span>  </a></li>
+          <li> <a href=""><i class="fas fa-list-ul"></i> <span class="nav-label">Button</span> </a></li>
+          <li> <a href="#"><i class="fas fa-images"></i> <span class="nav-label">Forms</span></a> </li>
+          <li> <a href="#"><i class="fas fa-sync"></i> <span class="nav-label">Colors</span></a> </li>
+          <li> <a href="#"><i class="fas fa-cog"></i> <span class="nav-label">Accordion</span></a> </li>
+        </ul>
+      </div>
+    </aside>
+    <div id="bottom" class="navbar d-sm-none">
+      <a href="dashboard.html" class="active">
+        <i class="fas fa-home"></i>
+        <p class="m-0">Dashboard</p>
+      </a>
+      <a href="controller-configuration.html">
+        <i class="fas fa-tools"></i>
+        <p class="m-0">Tools</p>
+      </a>
+      <a href="charts.html">
+        <i class="fas fa-chart-line"></i>
+        <p class="m-0">Charts</p>
+      </a>
+      <a href="#contact">
+        <i class="fas fa-list-ul"></i>
+        <p class="m-0">More</p>
+      </a>
+    </div>
+
+    <div id="main">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 page-title">
+            <h2><span class="text-primary">Smart</span> Lighting Dashboard</h2>
+            <nav class="breadcrumb-container" aria-label="breadcrumb">
+              <ol class="breadcrumb pt-0">
+                <li class="breadcrumb-item">
+                    <a href="#">Home</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="fontawesome/js/all.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+    $(document).ready(function(){
+       $('.sidebar a.collapsed').click( function(e) {
+            $('.fa-chevron-left').addClass('fa-rotate-45');
+            $('.collapse').collapse('hide').delay(1000).queue(function(next){
+               $('.collapse.show').collapse('show');
+               next();
+           });
+        });
+
+      });
+    </script>
+    <script type="text/javascript">
+
+    $(document).ready(function(){
+        $("#btn-sidebar").click(function(){
+          if ($(".sidebar").hasClass('close')) {
+             $(".sidebar").removeClass("close w-0").addClass("overflow-hidden");
+             $("#main").removeClass('main-lg').delay(1000).queue(function(next){
+                $('.sidebar').removeClass("overflow-hidden");
+                next();
+            });
+          } else if ($(".sidebar").hasClass('open')) {
+              $(".sidebar").addClass('w-0 overflow-hidden').delay(1000).queue(
+                function(next) {
+                  $(".sidebar").removeClass("open overflow-hidden").addClass('close');
+                  $(".sub-menu.show").collapse('hide');
+                  $('#main').removeClass("main-sm").addClass('main-lg');
+                 next();
+             });
+           } else {
+               $("#main").addClass('main-sm');
+               $('.sidebar').addClass("open overflow-hidden").delay(1000).queue(
+                 function(next) {
+                  $('.sidebar').removeClass("overflow-hidden");
+                  next();
+              });
+           }
+        });
+    });
+    </script>
+
+  </body>
+</html>

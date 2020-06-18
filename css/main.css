@@ -3,6 +3,7 @@ body {
   color: #575757;
   overflow-x: hidden;
   font-size: 14px;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -206,120 +207,260 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-
-
-
-/* The side navigation menu */
-.side-nav {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 9999; /* Stay on top */
-  top: 70px; /* Stay at the top */
-  left: 0;
-  background-color: #f1f3f6; /* Black*/
-  overflow-x: hidden; Disable horizontal scroll
-  padding-top: 70px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the side-nav */
-  -moz-box-shadow:    0 5px 10px 2px #ccc;
-  -webkit-box-shadow: 0 5px 10px 2px #ccc;
-  box-shadow:         0 5px 10px 2px #ccc;
+.header {
+  background-color: #f1f3f6;
+  box-shadow: 7px 7px 14px #e5e7ea, -7px -7px 14px #fdffff;
+  border-bottom: 1px solid #e5e7ea;
 }
 
-.side-nav.active {
-  width: 80px;
+.header .dropdown-menu {
+  position: absolute;
+  right: 0;
+  left: auto;
+  border-radius: 0px;
 }
 
-.side-nav.open.expand {
-  width: 230px;
+.header .user-image {
+  float: left;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
 }
 
-.side-nav ul,
-.side-nav li {
-  list-style: none;
-  padding: 0;
-  text-align:center;
+.header .navbar {
+  width: 100%;
 }
 
-.side-nav li.active {
-  border-left: 4px solid #07a479;
-}
-
-/* The navigation menu links */
-.side-nav li a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
+.header .navbar-light .navbar-nav .nav-link:hover,
+.header .navbar-light .navbar-nav .nav-link:focus {
   color: #575757;
+  box-shadow: 7px 7px 14px #e5e7ea, -7px -7px 14px #fdffff;
+  border-radius: 5px;
+  transition: all 1s  ease-in-out;
+}
+
+.header .fa.fa-fw.fa-bars {
+  color: #575757;
+}
+
+.header .navbar-light .navbar-nav .nav-link {
+  color: #575757;
+  padding: 10px 15px;
+  position: relative;
+  height: 100%;
+}
+
+.header .navbar-light .navbar-nav .nav-link i {
+    font-size: 18px;
+}
+
+.header .navbar-light .nav-right > .navbar-nav > li {
+  margin-left: 20px;
+}
+
+.header .navbar-light .nav-right > .navbar-nav > li.user-menu > .nav-link {
+    padding: 0;
+}
+
+.header  li > a > .label {
+  position: absolute;
+  top: 9px;
+  right: 7px;
+  text-align: center;
+  font-size: 9px;
+  padding: 2px 3px;
+  line-height: .9;
+  color: #fff;
+  border-radius: .25em;
+}
+
+.header  li > a:after {
+  display: none;
+}
+
+.header-ul {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: #ffffff;
+  padding: 7px 10px;
+  border-bottom: 1px solid #f4f4f4;
+  color: #333;
+  font-size: 14px;
+}
+
+.navbar-nav {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.navbar-nav > .notifications-menu > .dropdown-menu,
+.navbar-nav > .messages-menu > .dropdown-menu,
+.navbar-nav > .tasks-menu > .dropdown-menu {
+  width: 280px;
+  padding: 0 0 0 0;
+  margin: 0;
+  top: 100%;
+}
+.navbar-nav > .messages-menu > .dropdown-menu li .menu > li > a > div > img {
+    margin: auto 10px auto auto;
+    width: 40px;
+    height: 40px;
+}
+.navbar-nav > .messages-menu > .dropdown-menu li .menu > li > a
+,.navbar-nav > .notifications-menu > .dropdown-menu li .menu > li > a {
+  margin: 0;
+  padding: 10px 10px;
   display: block;
-  transition: 0.3s;
+  white-space: nowrap;
+  border-bottom: 1px solid #f4f4f4;
 }
-.side-nav li a p {
+
+.navbar-nav > .messages-menu > .dropdown-menu li .menu > li > a > h4 {
+  padding: 0;
+  margin: 0 0 0 45px;
+  color: #333;
+  font-size: 15px;
+  position: relative;
+}
+
+.navbar-nav > .messages-menu > .dropdown-menu li .menu > li > a > p {
+  margin: 0 0 0 45px;
   font-size: 12px;
+  color: #888888;
 }
 
-.side-nav li.active a {
+.footer-ul a{
+	border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  font-size: 12px;
+  background-color: #fff;
+  padding: 7px 10px;
+  border-bottom: 1px solid #eeeeee;
+  color: #333 ;
+  display: block;
+}
+
+.dropdown-menu-over .menu {
+  max-height: 200px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow-x: hidden;
+}
+
+.navbar-nav > .notifications-menu > .dropdown-menu li .menu > li > a {
+  color: #444444;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 10px;
+}
+
+.navbar-nav > .notifications-menu > .dropdown-menu li .menu > li > a > .glyphicon,
+.navbar-nav > .notifications-menu > .dropdown-menu li .menu > li > a > .fa,
+.navbar-nav > .notifications-menu > .dropdown-menu li .menu > li > a > .ion {
+  width: 20px;
+}
+
+a.navbar-brand {
+  width: 165px;
+}
+
+.btn {
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 7px 7px 14px #e5e7ea, -7px -7px 14px #fdffff;
+}
+
+.btn-primary {
   color: #07a479;
-  margin-left: -4px;
+  background: #f1f3f6;
+  border: none;
 }
 
-/* When you mouse over the navigation links, change their color */
-.side-nav a:hover {
-  color: #818181;
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  color: #07a479 !important;
+  background-color: #f1f3f6 !important;
+  border: none !important;
+  box-shadow: 14px 14px 28px #e5e7ea, -14px -14px 28px #fdffff !important;
+  transition: all 0.3s  ease-in-out;
 }
 
-.side-nav a i {
-  font-size: 16px;
+#top .center {
+  padding: 0;
+  margin-left: 3rem;
 }
 
-/* Position and style the close button (top right corner) */
-.side-nav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+#top .center .logo {
+  display: flex;
 }
 
-.side-nav .dropdown-menu {
-  overflow-x: visible;
+#top .center .logo h3 {
+  margin-bottom: 0;
+  color: #07a479;
 }
 
-.main-menu {
-  position: absolute;
-  top: 50%;
-  /* left: 0; */
-  left: 35%;
-  /* transform: translate(0%, -50%); */
-  transform: translate(-50%, -50%);
-  /* width: 100%; */
+#top .center p {
+  margin-bottom: 0;
+  color: #07a479;
+  line-height: 0.5;
 }
 
-.sub-menu {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 70px; /* Stay at the top */
-  left: 80px;
-  background-color: #f1eeee; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 70px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the side-nav */
-  -moz-box-shadow:    0 5px 10px 2px #ccc;
-  -webkit-box-shadow: 0 5px 10px 2px #ccc;
-  box-shadow:         0 5px 10px 2px #ccc;
+#top .nav-left {
+  float: left;
+  display: flex;
 }
 
-.sub-menu.active {
-  width: 150px;
+#top .nav-right {
+  float: right;
+  display: flex;
+}
+
+/*    left menu **/
+
+/********  TOP Bar *******/
+
+
+
+
+
+
+
+@media screen and (max-width: 450px) {
+  aside,
+  #top #btn-sidebar,
+  #top .center p {
+    display: none;
+  }
+  #top div.center {
+    margin-left: 0;
+  }
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
-  transition: margin-left .5s;
+  transition: margin-left 1s;
   padding: 20px;
   margin-left: 80px;
   margin-top: 80px;
+}
+
+#main.main-lg {
+  margin-left: 0;
+  transition: margin-left 1s;
+}
+
+#main.main-sm {
+  margin-left: 220px;
+  transition: margin-left 1s;
 }
 
 .card-body-title {
@@ -340,18 +481,6 @@ input:checked + .slider:before {
 
 .bg-primary {
   background-color: #07a479 !important;
-}
-
-.btn-primary,
-.btn-primary:focus {
-    color: #fff;
-    background-color: #07a479;
-    border-color: #07a479;
-}
-
-.btn-primary:hover {
-    background-color: #099b73;
-    border-color: #099b73;
 }
 
 .match-height .card {
@@ -450,7 +579,7 @@ input:checked + .slider:before {
     font-size: 24px;
   }
 
-  .navbar {
+  #bottom.navbar {
   background-color: #f1eeee;
   overflow: hidden;
   position: fixed;
@@ -569,6 +698,30 @@ input:checked + .slider:before {
 /* .card-body, */
 .card-footer {
   background: #f1f3f6;
+}
+
+.w-0 {
+  width: 0 !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f3f6;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #adb5bd;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the side-nav (less padding and a smaller font size) */
