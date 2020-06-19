@@ -15,126 +15,217 @@
     <title>SCEMP</title>
   </head>
   <body>
-    <nav class="header fixed-top">
-      <a id="menu" href="#" class="menu" onclick="togNav()">
-        <i id="menuicon" class="fas fa-bars"></i>
-      </a>
-      <div id="header">
-        <div class="header-left">
-          <div class="logo d-flex">
-            <h3 class="mb-0 text-primary"><i class="fas fa-power-off"></i></h3>
-            <h3 class="mb-0 text-primary ml-2">SCEMP</h3>
+    <header class="header">
+      <nav id="top" class="navbar navbar-toggleable-md navbar-light pt-0 pb-0 ">
+        <div class="nav-left">
+          <a id="btn-sidebar" href="#" class="btn btn-primary"><span class="fa fa-fw fa-bars "></span></a>
+          <div class="center">
+            <div class="logo">
+              <h3><i class="fas fa-power-off"></i></h3>
+              <h3 class="ml-2">SCEMP</h3>
+            </div>
+            <p class="text-muted"><small>Synergy Coologic Energy Managing Platform</small></p>
           </div>
-          <p class="mb-0 text-muted" style="line-height: 0.5;"><small>Synergy Coologic Energy Managing Platform</small></p>
         </div>
-        <div class="header-right">
-          <div class="dropdown notification">
-            <a class="btn-notification dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="material-icons">notifications</i>
-            </a>
-
-            <div class="dropdown-menu dropdown-menu-sm-right" aria-labelledby="dropdownMenuLink">
-              <div class="dropdown-menu-header">
-                <h6 class="dropdown-menu-title">Notification</h6>
-                <div class="dropdown-option">
-                  <a href="">Filter List</a>
-                  <a href="">Settings</a>
-                </div>
+        <div class="nav-right">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown messages-menu">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-envelope"></i>
+                <span class="label label-success bg-success">10</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <ul class="dropdown-menu-over list-unstyled">
+                  <li class="header-ul text-center">You have 4 messages</li>
+                  <li>
+                    <!-- inner menu: contains the actual data -->
+                    <ul class="menu list-unstyled">
+                      <li><!-- start message -->
+                      <a href="#">
+                        <div class="pull-left">
+                          <img src="http://via.placeholder.com/160x160" class="rounded-circle  " alt="User Image">
+                        </div>
+                        <h4>
+                        Support Team
+                        <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                        </h4>
+                        <p>Why not buy a new awesome theme?</p>
+                      </a>
+                    </li>
+                    <!-- end message -->
+                    <li>
+                      <a href="#">
+                        <div class="pull-left">
+                          <img src="http://via.placeholder.com/160x160" class="rounded-circle " alt="User Image">
+                        </div>
+                        <h4>
+                        AdminLTE Design Team
+                        <small><i class="fa fa-clock-o"></i> 2 hours</small>
+                        </h4>
+                        <p>Why not buy a new awesome theme?</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="pull-left">
+                          <img src="http://via.placeholder.com/160x160" class="rounded-circle " alt="User Image">
+                        </div>
+                        <h4>
+                        Developers
+                        <small><i class="fa fa-clock-o"></i> Today</small>
+                        </h4>
+                        <p>Why not buy a new awesome theme?</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="pull-left">
+                          <img src="http://via.placeholder.com/160x160" class="rounded-circle " alt="User Image">
+                        </div>
+                        <h4>
+                        Sales Department
+                        <small><i class="fa fa-clock-o"></i> Yesterday</small>
+                        </h4>
+                        <p>Why not buy a new awesome theme?</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="pull-left">
+                          <img src="http://via.placeholder.com/160x160" class="rounded-circle " alt="User Image">
+                        </div>
+                        <h4>
+                        Reviewers
+                        <small><i class="fa fa-clock-o"></i> 2 days</small>
+                        </h4>
+                        <p>Why not buy a new awesome theme?</p>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                  <li class="footer-ul text-center"><a href="#">See All Messages</a></li>
+                </ul>
               </div>
-              <!-- <div class="list-group"> -->
-                <a href="#" class="list-group-item list-group-item-action bg-gray dropdown-item border-left-0 border-right-0 bprder-top-0">
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">Assistant Manager</h5>
-                    <small>3 days ago</small>
-                  </div>
-                  <p class="mb-1"><span class="text-warning">Warning</span> on <strong>Level B2</strong>.</p>
-                  <small>Light Failure, donec id elit non mi porta.</small>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action bg-gray dropdown-item border-left-0 border-right-0">
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">Project Engineer </h5>
-                    <small class="text-muted">3 days ago</small>
-                  </div>
-                  <p class="mb-1"><span class="text-primary">Appreciated</span> your work yesterday.</p>
-                  <small class="text-muted">Good Job! Donec id elit non mi porta.</small>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action bg-gray dropdown-item border-left-0 border-right-0 border-bottom-0">
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">Project Executive</h5>
-                    <small class="text-muted">3 days ago</small>
-                  </div>
-                  <p class="mb-1"><strong>20+ new items</strong> added at store room.</p>
-                  <small class="text-muted">Donec id elit non mi porta.</small>
-                </a>
-              <!-- </div>
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a> -->
-            </div>
-          </div>
-          <div class="dropdown">
-            <a href="#" class="dropdown-toggle user-profile dropdown-menu-sm-right" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <img src="http://via.placeholder.com/500x500" alt="">
-            </a>
-            <div class="dropdown-menu dropdown-user" aria-labelledby="dropdownMenu2">
-              <a href="#" class="dropdown-item" type="button">My Profile</a>
-              <div class="dropdown-divider"></div>
-              <a href="#" class="dropdown-item" >Dark Mode</a>
-              <a href="#" class="dropdown-item" type="button">Settings</a>
-              <a href="index.html" class="dropdown-item" type="button">Logout</a>
-            </div>
-          </div>
+            </li>
+            <li class="nav-item dropdown notifications-menu">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bell"></i>
+                <span class="label label-warning bg-warning">10</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <ul class="dropdown-menu-over list-unstyled">
+                  <li class="header-ul text-center">You have 10 notifications</li>
+                  <li>
+                    <!-- inner menu: contains the actual data -->
+                    <ul class="menu list-unstyled">
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the
+                          page and may cause design problems
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-users text-red"></i> 5 new members joined
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-shopping-cart text-green"></i> 25 sales made
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-user text-red"></i> You changed your username
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="footer-ul text-center"><a href="#">View all</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown  user-menu">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="img/balloon.jpg" class="user-image" alt="User Image" >
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+          <!-- <a href="#" class="btn btn-primary"><i class="fas fa-bell"></i></a> -->
         </div>
+      </nav>
+    </header>
+    <aside>
+      <div class="sidebar left sidebar-xs">
+        <ul class="list-sidebar">
+          <li>
+            <a href="dashboard.html"><i class="fas fa-home"></i><span class="nav-label"> Dashboard </span></a>
+          </li>
+          <li><a href="charts.html" class="open"><i class="fas fa-tasks"></i><span class="nav-label">Analysis</span>  </a></li>
+          <li>
+            <a href="#" data-toggle="collapse" data-target="#controller" class="collapsed active" >
+              <i class="fas fa-tools"></i>
+              <span class="nav-label">Controller</span>
+              <span class="fas fa-chevron-left pull-right"></span>
+            </a>
+            <ul class="sub-menu collapse" id="controller">
+              <li><a href="controller2.html">Tools</a></li>
+              <li><a href="#">Export</a></li>
+              <li><a href="#">File Upload</a></li>
+              <li><a href="#">Coologic Console</a></li>
+              <li><a href="#">Baseline</a></li>
+              <li><a href="#">Translator</a></li>
+              <li><a href="#">System Log</a></li>
+              <li><a href="#">Map</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" data-toggle="collapse" data-target="#system" class="collapsed active" >
+              <i class="fas fa-desktop"></i>
+              <span class="nav-label">System</span>
+              <span class="fas fa-chevron-left pull-right"></span>
+            </a>
+            <ul class="sub-menu collapse" id="system">
+              <li><a href="#">Location</a></li>
+              <li><a href="#">Site</a></li>
+              <li><a href="#">Equipment</a></li>
+              <li><a href="#">Coologic</a></li>
+              <li><a href="#">Site Types</a></li>
+              <li><a href="#">UOM</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" data-toggle="collapse" data-target="#security" class="collapsed active" >
+              <i class="fas fa-users"></i>
+              <span class="nav-label">Security</span>
+              <span class="fas fa-chevron-left pull-right"></span>
+            </a>
+            <ul class="sub-menu collapse" id="security">
+              <li><a href="#">User Group</a></li>
+              <li><a href="#">User List</a></li>
+            </ul>
+          </li>
+          <li><a href="charts.html" class="open"><i class="fas fa-chart-line"></i><span class="nav-label">Charts</span>  </a></li>
+          <li> <a href="button.html"><i class="fas fa-list-ul"></i> <span class="nav-label">Button</span> </a></li>
+          <li> <a href="form.html"><i class="fas fa-images"></i> <span class="nav-label">Forms</span></a> </li>
+          <li> <a href="color.html"><i class="fas fa-sync"></i> <span class="nav-label">Colors</span></a> </li>
+          <li class="active"> <a href="accordion.html"><i class="fas fa-cog"></i> <span class="nav-label">Accordion</span></a> </li>
+        </ul>
       </div>
-    </nav>
-    <div id="mySidenav" class="side-nav open" style="width: 80px;">
-      <ul class="main-menu">
-        <li>
-          <a href="dashboard.html">
-            <i class="fas fa-home"></i>
-            <p class="m-0">Dashboard</p>
-          </a>
-        </li>
-        <li>
-          <a href="controller-configuration.html">
-            <i class="fas fa-tools"></i>
-            <p class="m-0">Tools</p>
-          </a>
-        </li>
-        <li>
-          <a href="charts.html">
-            <i class="fas fa-chart-line"></i>
-            <p class="m-0">Charts</p>
-          </a>
-        </li>
-        <li>
-          <a href="button.html">
-            <i class="fas fa-list-ul"></i>
-            <p class="m-0">Buttons</p>
-          </a>
-        </li>
-        <li>
-          <a href="form.html">
-            <i class="fas fa-images"></i>
-            <p class="m-0">Forms</p>
-          </a>
-        </li>
-        <li>
-          <a href="color.html">
-            <i class="fas fa-sync"></i>
-            <p class="m-0">Colors</p>
-          </a>
-        </li>
-        <li class="nav-item active">
-          <a href="accordion.html">
-            <i class="fas fa-cog"></i>
-            <p class="m-0">Accordion</p>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="navbar d-sm-none">
-      <a href="dashboard.html">
+    </aside>
+    <div id="bottom" class="navbar d-sm-none">
+      <a href="dashboard.html" class="active">
         <i class="fas fa-home"></i>
         <p class="m-0">Dashboard</p>
       </a>
@@ -146,7 +237,7 @@
         <i class="fas fa-chart-line"></i>
         <p class="m-0">Charts</p>
       </a>
-      <a href="#contact" class="active">
+      <a href="#contact">
         <i class="fas fa-list-ul"></i>
         <p class="m-0">More</p>
       </a>
@@ -229,7 +320,6 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/main.js"></script>
     <!-- <script src="fontawesome/js/all.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -237,6 +327,7 @@
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
+    <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script src="lib/jquery/js/jquery.js"></script>
     <script src="lib/popper.js/js/popper.js"></script>

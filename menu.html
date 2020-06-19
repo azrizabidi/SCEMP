@@ -11,221 +11,6 @@
     <link rel="stylesheet" href="fontawesome/css/all.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <style>
-    aside {
-  height: 100%;
-  position:fixed;
-}
-
-.sidebar {
-  height: 100%;
-  width: 80px;
-  text-align: center;
-  background-color: #f1f3f6;
-  -moz-box-shadow: 7px 7px 14px #e5e7ea;
-  -webkit-box-shadow: 7px 7px 14px #e5e7ea;
-  box-shadow: 7px 7px 14px #e5e7ea;
-  transition: all 1s  ease-in-out;
-}
-
-.sidebar ul.list-sidebar {
-  list-style: none;
-  margin: 0 10px;
-  padding: 0px;
-  transform: translate(0%, 30%);
-  /* transition: all 2s  ease-in-out; */
-}
-
-.sidebar .list-sidebar > li {
-  border-bottom:  0px solid #eaeaea;
-  /* transition: all 1s  ease-in-out; */
-  /* margin-bottom: 10px; */
-  position: relative;
-}
-
-.sidebar ul.sub-menu {
-  list-style: none;
-  padding-left: 0px;
-  transform: translate(0%, 0%);
-}
-
-.sidebar .list-sidebar > li.active {
-  box-shadow: 7px 7px 14px #e5e7ea, -7px -7px 14px #fdffff;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
-.sidebar .list-sidebar li a {
-  display: inline-flex;
-  padding:12px 20px;
-  color:#575757;
-  /* border-left:0px solid #dedede; */
-  text-decoration:none;
-  width: 100%;
-  overflow: hidden;
-}
-
-.sidebar .list-sidebar li:hover {
-  border-radius: 5px;
-  box-shadow: 7px 7px 14px #e5e7ea, -7px -7px 14px #fdffff;
-  color: #575757;
-  border-left: none;
-  transition: all 1s  ease-in-out;
-}
-
-/* .sidebar .list-sidebar > li > a:hover ul.submenu {
-  border-radius: 5px;
-  box-shadow: 7px 7px 14px #e5e7ea, -7px -7px 14px #fdffff;
-  color: #575757;
-  border-left: none;
-  transition: all 1s  ease-in-out;
-} */
-
-.sidebar .list-sidebar > li.active > a {
-  border-radius: 5px;
-  /* box-shadow: 7px 7px 14px #e5e7ea, -7px -7px 14px #fdffff; */
-  color: #07a479;
-  border-left: none;
-}
-
-.sidebar li a .nav-label,
-.sidebar li a .nav-label+span {
-  display: inline-flex;
-  /* width: 0; */
-  /* transition: all 1s  ease-in-out; */
-  margin-left: 35px;
-}
-
-.sidebar .sub-menu {
-  position: absolute;
-  left: 70px;
-  top: 0;
-  width: 200px;
-  z-index: 100;
-  background: #f1f3f6;
-  box-shadow: 7px 7px 14px #e5e7ea, 0px -3px 5px #fdffff;
-  border-radius: 0 5px 5px 0;
-  border-left: 1px solid #e5e7ea;
-  transition: all 1s  ease-in-out;
-}
-
-.sidebar ul li .sub-menu li {
-  border-bottom: 1px solid #eaeaea;
-}
-
-.sidebar ul li .sub-menu li a {
-  position:relative;
-  /* transition: 1s; */
-}
-
-.sidebar ul li .sub-menu li a:hover {
-  padding-left:20px;
-  /* transition: all 1s  ease-in-out; */
-}
-
-.sidebar li a .nav-label,
-.sidebar li a .nav-label+span,
-.sidebar .sub-menu li a {
-  /* transition: all 1s  ease-in-out; */
-  font-size: 12px;
-}
-
-.sidebar.open {
-  width:220px;
-  transition: all 1s  ease-in-out;
-  overflow-y: auto;
-}
-
-.sidebar.open .list-sidebar {
-  transform: translate(0%, 0%);
-  margin: 0;
-  transition: all 1s  ease-in-out;
-  /* box-shadow: 7px 7px 14px #e5e7ea, -7px -7px 14px #fdffff; */
-}
-
-.sidebar.open .list-sidebar > li {
-  border-bottom: 1px solid #eaeaea;
-  transition: all 1s  ease-in-out;
-}
-
-.sidebar.open .list-sidebar > li.active {
-  box-shadow: none;
-  margin-bottom: 0;
-}
-
-.sidebar.open .list-sidebar > li > a {
-  margin-left: 0px;
-  padding-left: 34px;
-  transition: all 1s  ease-in-out;
-}
-
-.sidebar.open .list-sidebar > li.active > a {
-  border-left: 4px solid #07a479;
-  color: #07a479;
-  transition: all 1s  ease-in-out;
-  margin-left: 0;
-  padding-left: 30px;
-  border-radius: 0;
-  box-shadow: none;
-}
-
-.sidebar.open li a[aria-expanded="true"] span.fa-chevron-left {
-  -webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-}
-
-.sidebar.open li a .nav-label,
-.sidebar.open li a .nav-label+span {
-  transition: all 1s  ease-in-out;
-  margin-left: 10px;
-  width: auto;
-}
-
-.sidebar.open .list-sidebar a > .fa-chevron-left {
-  position: absolute;
-  right: 20px;
-}
-
-/* .sidebar.open .list-sidebar > li > .sub-menu li {
-  border-left: 1px solid #eaeaea;
-} */
-
-.sidebar.open .list-sidebar > li > .sub-menu {
-  width: 100%;
-  position: initial;
-  box-shadow: inset 3px 5px 7px #eaeaea, inset -5px -5px 7px #f9f9f9;
-  transition: all 1s ease-in-out;
-  border-top: 1px solid #eaeaea;
-}
-
-.sidebar.open .list-sidebar > li > .sub-menu li a {
-  margin-left: 30px;
-}
-
-.sidebar.open .list-sidebar li.active > ul.sub-menu li.active a {
-  color: #07a479;
-  font-weight: 600;
-  /* margin-left: 6px; */
-}
-
-.sidebar.close {
-  width: 0;
-  /* box-shadow: 0px 0px 0px #f1f3f6; */
-  overflow: hidden;
-  transition: all 1s  ease-in-out;
-}
-
-.sidebar.close .list-sidebar {
-  transform: translate(0%, 30%);
-  transition: all 1s  ease-in-out;
-  overflow: hidden;
-}
-
-    </style>
-
     <title>SCEMP</title>
   </head>
   <body>
@@ -380,12 +165,11 @@
         </div>
       </nav>
     </header>
-
     <aside>
       <div class="sidebar left sidebar-xs">
         <ul class="list-sidebar">
           <li class="active">
-            <a href="#"><i class="fas fa-home"></i><span class="nav-label"> Dashboard </span></a>
+            <a href="dashboard.html"><i class="fas fa-home"></i><span class="nav-label"> Dashboard </span></a>
           </li>
           <li><a href="charts.html" class="open"><i class="fas fa-tasks"></i><span class="nav-label">Analysis</span>  </a></li>
           <li>
@@ -395,7 +179,7 @@
               <span class="fas fa-chevron-left pull-right"></span>
             </a>
             <ul class="sub-menu collapse" id="controller">
-              <li><a href="controller.html">Tools</a></li>
+              <li><a href="controller2.html">Tools</a></li>
               <li><a href="#">Export</a></li>
               <li><a href="#">File Upload</a></li>
               <li><a href="#">Coologic Console</a></li>
@@ -489,45 +273,7 @@
     <script src="js/main.js"></script>
 
     <script>
-    $(document).ready(function(){
-       $('.sidebar a.collapsed').click( function(e) {
-            $('.fa-chevron-left').addClass('fa-rotate-45');
-            $('.collapse').collapse('hide').delay(1000).queue(function(next){
-               $('.collapse.show').collapse('show');
-               next();
-           });
-        });
 
-      });
-    </script>
-    <script type="text/javascript">
-
-    $(document).ready(function(){
-        $("#btn-sidebar").click(function(){
-          if ($(".sidebar").hasClass('close')) {
-             $(".sidebar").removeClass("close w-0").addClass("overflow-hidden");
-             $("#main").removeClass('main-lg').delay(1000).queue(function(next){
-                $('.sidebar').removeClass("overflow-hidden");
-                next();
-            });
-          } else if ($(".sidebar").hasClass('open')) {
-              $(".sidebar").addClass('w-0 overflow-hidden').delay(1000).queue(
-                function(next) {
-                  $(".sidebar").removeClass("open overflow-hidden").addClass('close');
-                  $(".sub-menu.show").collapse('hide');
-                  $('#main').removeClass("main-sm").addClass('main-lg');
-                 next();
-             });
-           } else {
-               $("#main").addClass('main-sm');
-               $('.sidebar').addClass("open overflow-hidden").delay(1000).queue(
-                 function(next) {
-                  $('.sidebar').removeClass("overflow-hidden");
-                  next();
-              });
-           }
-        });
-    });
     </script>
 
   </body>
